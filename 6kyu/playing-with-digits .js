@@ -30,6 +30,7 @@ function digPow(n, p) {
         .split('')
         .map(Number)
         .reduce((acc, cur, i) => acc + cur ** (p + i), 0)
+
     return sum % n === 0 ? sum / n : -1
 }
 
