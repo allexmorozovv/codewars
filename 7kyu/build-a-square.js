@@ -10,8 +10,17 @@
 
 // my solution
 
-function generateShape(integer){
-    return ('+'.repeat(integer) + '\n').repeat(integer).trim()
+function generateShape(integer) {
+    // // return ('+'.repeat(integer) + '\n').repeat(integer).trim()
+    // const line = '+'.repeat(integer)
+    // let arr = []
+    // for(let i = 0; i < integer; i++){
+    //     arr.push(line)
+    // }
+    // return arr.join('\n')
+    const line = '+'.repeat(integer)
+    return Array(integer).fill(line).join('\n')
 }
 
-console.log(generateShape(3))
+
+console.log(generateShape(5))
